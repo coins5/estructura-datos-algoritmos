@@ -1,4 +1,4 @@
-#Generar una lista simple de los numeros primos comprendidos entre 'x' e 'y'
+#Checkear si es primo o no
 def esPrimo(n)
     contador = 0
     for i in 1..n
@@ -10,6 +10,7 @@ def esPrimo(n)
     return contador == 2
 end
 
+#Generar una lista simple de los numeros primos comprendidos entre 'x' e 'y'
 def generarPrimos(x, y)
     lista = nil
     ultimoNodo = nil
