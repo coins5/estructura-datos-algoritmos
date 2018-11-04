@@ -105,6 +105,28 @@ def eliminarPrimer(list)
     return list[1]
 end
 
+def recorrerLista(list)
+    if (list == nil)
+        return nil
+    end
+
+    # Obteniendo el primer valor y nodo de la lista
+    nodo = list[1]
+    valor = list[0]
+
+    while (nodo != nil)
+        
+        print valor
+        print '; '
+
+        valor = nodo[0]
+        nodo = nodo[1]
+        
+    end
+    # Imprimiendo el ultimo valor
+    print valor
+end
+
 lista = crearLista()
 puts ""
 puts "Creando lista"
@@ -145,3 +167,9 @@ puts ""
 puts "Eliminando primer elemento"
 lista = eliminarPrimer(lista)
 print lista
+
+puts ""
+puts ""
+puts "Recorriendo lista"
+recorrerLista(lista)
+
